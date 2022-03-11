@@ -3,14 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "migrate:up": "knex-migrate up",
+    "migrate:down": "knex-migrate down",
+    "seed": "knex seed:run",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "knex": "^1.0.3",
     "pg": "^8.7.3"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
 }
